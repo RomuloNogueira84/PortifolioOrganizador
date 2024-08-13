@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #010630;
+  color: white;
+  padding: 20px;
+  text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+header nav li a:hover {
+  color: #91a1f3;
+  background-color: #010630;
+}
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #9fcdf9;
+}
+
+#contact-info {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-info p {
+  margin: 10px 0;
+}
+
+#contact-info a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+#contact-info a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+aside {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  flex: 1;
+  min-width: 200px;
+}
+
+aside.left {
+  order: -1;
+  text-decoration: none;
+}
+
+aside.left a {
+  text-decoration: none;
+}
+
+aside.right {
+  order: 1;
+
+}
+
+aside.right a {
+  text-decoration: none;
+}
+
+  article {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    flex: 2;
+    min-width: 300px;
+  }
+
+  #about-me {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    line-height: 1.6;
+  }
+
+  #about-me h2 {
+    color: #010630;
+    margin-bottom: 15px;
+  }
+
+  #about-me p {
+    margin: 10px 0;
+    color: #333;
+  }
+
+  #about-me p::before {
+    content: "• ";
+    color: #4CAF50;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
